@@ -2,8 +2,8 @@ name: start stop azure resources test
 
 on:
   schedule:
-    - cron: '02 * * * *'
-    - cron: '03 * * * *'
+    - cron: '*/2 * * * *'
+    - cron: '*/3 * * * *'
 
 jobs:
   cronCheck:
