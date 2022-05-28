@@ -1,16 +1,20 @@
 name: start stop azure resources test
 
 on:
-  schedule:
-    - cron: '* * * * *'
-    - cron: '*/3 * * * *'
+  # schedule:
+  #   - cron: '* * * * *'
+  #   - cron: '*/3 * * * *'
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
   test_schedule:
     runs-on: ubuntu-latest
     steps:
       - name: Not on Monday or Wednesday
-        if: github.event.schedule != '* * * * *'
+        # if: github.event.schedule != '* * * * *'
         run: echo "This step will be skipped on Monday and Wednesday"
       - name: Every time
         run: echo "This step will always run"
