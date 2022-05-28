@@ -25,6 +25,7 @@ jobs:
       
     # Run commads to stop the azure resources
     - name: stop_azure_vm
+      if: github.event.schedule != '*/2 * * * *'
       run: |
         echo "stop command initiated"
 
