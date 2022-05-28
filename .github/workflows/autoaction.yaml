@@ -2,7 +2,7 @@ name: start stop azure resources test
 
 on:
   schedule:
-    - cron: '*/2 * * * *'
+    - cron: '* * * * *'
     - cron: '*/3 * * * *'
 
 jobs:
@@ -25,7 +25,7 @@ jobs:
       
     # Run commads to stop the azure resources
     - name: stop_azure_vm
-      if: github.event.schedule != '*/2 * * * *'
+      if: github.event.schedule != '* * * * *'
       run: |
         echo "stop command initiated"
 
