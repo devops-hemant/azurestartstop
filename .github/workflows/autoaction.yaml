@@ -1,4 +1,4 @@
-name: start stop azure resources test
+name: test
 
 on:
   schedule:
