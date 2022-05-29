@@ -1,0 +1,22 @@
+name: test
+
+on:
+  # schedule:
+  #   - cron: '* * * * *'
+  #   - cron: '*/16 * * * *'
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test_schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check date & time
+        #if: github.event.schedule != '*/16 * * * *'
+        run: |
+          DATE
+          date
+      # - name: Every time
+      #   run: echo "This step will always run"
