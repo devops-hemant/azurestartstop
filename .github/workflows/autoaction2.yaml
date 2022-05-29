@@ -1,4 +1,4 @@
-name: test
+name: date
 
 on:
   # schedule:
@@ -16,7 +16,6 @@ jobs:
       - name: check date & time
         #if: github.event.schedule != '*/16 * * * *'
         run: |
-          DATE
           date
       # - name: Every time
       #   run: echo "This step will always run"
