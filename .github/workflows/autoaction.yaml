@@ -3,7 +3,7 @@ name: test
 on:
   schedule:
     #- cron: '* * * * *'
-    - cron: '*/16 * * * *'
+    - cron: '* 1 * * *'
   # push:
   #   branches:
   #     - main
@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Not on Monday or Wednesday
-        if: github.event.schedule != '*/16 * * * *'
+        if: github.event.schedule != '* 1 * * *'
         run: echo "This step will be skipped on Monday and Wednesday"
       - name: Every time
         run: echo "This step will always run"
