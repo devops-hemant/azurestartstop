@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: azurestartstop
+  annotations:
+    github.com/project-slug: devops-hemant/azurestartstop
+spec:
+  type: other
+  lifecycle: unknown
