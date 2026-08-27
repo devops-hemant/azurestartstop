@@ -6,4 +6,5 @@ metadata:
     github.com/project-slug: devops-hemant/azurestartstop
 spec:
   type: other
+  owner: Hemant Sharma
   lifecycle: unknown
