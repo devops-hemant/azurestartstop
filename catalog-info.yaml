@@ -6,5 +6,5 @@ metadata:
     github.com/project-slug: devops-hemant/azurestartstop
 spec:
   type: Script
-  owner: Hemant
+  owner: DevOps
   lifecycle: production
