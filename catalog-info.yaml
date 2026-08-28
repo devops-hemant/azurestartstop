@@ -4,6 +4,7 @@ metadata:
   name: azurestartstop
   annotations:
     github.com/project-slug: devops-hemant/azurestartstop
+    backstage.io/techdocs-ref: value
 spec:
   type: Script
   owner: DevOps
